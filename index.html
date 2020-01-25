@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page | CCI Ocha!</title>
-  <meta name="theme-color" content="#0f75bd">
-  <link rel="shortcut icon" href="res/image/favicon.png">
-  <link rel="icon" sizes="512x512" href="res/image/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page | CCI Ocha!</title>
+	<meta name="theme-color" content="#0f75bd">
+	<link rel="shortcut icon" href="res/image/favicon.png">
+	<link rel="icon" sizes="512x512" href="res/image/favicon.png">
+
 	<style>
-    * {
-      box-sizing: border-box;
-      text-decoration: none;
-      outline: none !important;
-      margin: 0;
-      font-family: sans-serif;
-      line-height: 1.618em
-    }
+	@keyframes shake {
+		0% { transform: translate(-249px, -124px) rotate(0deg); }
+		10% { transform: translate(-251px, -127px) rotate(-1deg); }
+		20% { transform: translate(-253px, -125px) rotate(1deg); }
+		30% { transform: translate(-247px, -123px) rotate(0deg); }
+		40% { transform: translate(-249px, -126px) rotate(1deg); }
+		50% { transform: translate(-251px, -123px) rotate(-1deg); }
+		60% { transform: translate(-253px, -124px) rotate(0deg); }
+		70% { transform: translate(-247px, -124px) rotate(-1deg); }
+		80% { transform: translate(-251px, -126px) rotate(1deg); }
+		90% { transform: translate(-249px, -123px) rotate(0deg); }
+		100% { transform: translate(-249px, -127px) rotate(-1deg); }
+	}
 
-    body {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      overflow: hidden;
-    }
+	* {
+		box-sizing: border-box;
+		text-decoration: none;
+		outline: none !important;
+		margin: 0;
+		font-family: sans-serif;
+		line-height: 1.618em
+	}
 
-    .angry-cici {
-      display: inline-block;
-      position: absolute;
-      width: 500px;
-      height: 250px;
-      top: 50%;
-      left: 50%;
-      background-image: url(res/image/angry-cici.jpg);
-      animation: shake 0.1s;
-      animation-iteration-count: infinite;
-    }
+	body {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		overflow: hidden;
+	}
 
-    @keyframes shake {
-      0% { transform: translate(-249px, -124px) rotate(0deg); }
-      10% { transform: translate(-251px, -127px) rotate(-1deg); }
-      20% { transform: translate(-253px, -125px) rotate(1deg); }
-      30% { transform: translate(-247px, -123px) rotate(0deg); }
-      40% { transform: translate(-249px, -126px) rotate(1deg); }
-      50% { transform: translate(-251px, -123px) rotate(-1deg); }
-      60% { transform: translate(-253px, -124px) rotate(0deg); }
-      70% { transform: translate(-247px, -124px) rotate(-1deg); }
-      80% { transform: translate(-251px, -126px) rotate(1deg); }
-      90% { transform: translate(-249px, -123px) rotate(0deg); }
-      100% { transform: translate(-249px, -127px) rotate(-1deg); }
-    }
-  </style>
+	.angry-cici {
+		display: inline-block;
+		position: absolute;
+		width: 500px;
+		height: 250px;
+		top: 50%;
+		left: 50%;
+		background-image: url(res/image/angry-cici.jpg);
+		animation: shake 0.1s;
+		animation-iteration-count: infinite;
+	}
+</style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-156968032-1');
+</script>
 </head>
 <body>
-  <h1 style="padding-top: 12vh;">Welcome to CCI Ocha!</h1>
-  <div class="angry-cici"></div>
-  <p>Sorry, website is (still) under construction.</p>
+	<h1 style="padding-top: 12vh;">Welcome to CCI Ocha!</h1>
+	<div class="angry-cici"></div>
+	<p>Sorry, website is (still) under construction.</p>
 </body>
 </html>
